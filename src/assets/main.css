@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+[color-scheme=dark] {
+  background-color: rgb(20, 20, 20);
+  color: #f4f4f4;
+}
+[color-scheme=dark] .navbar {
+  background: rgb(19, 19, 19);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+}
+[color-scheme=dark] .navbar .links {
+  color: #f4f4f4;
+}
+[color-scheme=dark] .navbar .links:hover {
+  color: rgb(0, 233, 0);
+  transition: 0.3s;
+}
+[color-scheme=dark] .navbar .actual-route-link {
+  color: rgb(0, 233, 0);
+}
+[color-scheme=dark] .navbar .toggle-theme {
+  color: rgba(255, 255, 255, 0.7137254902);
+  border: 1px solid rgba(255, 255, 255, 0.473);
+}
+[color-scheme=dark] .navbar .toggle-theme:hover {
+  background-color: rgb(27, 27, 27);
+}
+[color-scheme=dark] .products-container .create-btn {
+  border: 1px solid rgba(255, 255, 255, 0.493);
+  color: rgba(244, 244, 244, 0.5764705882);
+}
+[color-scheme=dark] .products-container .create-btn:hover {
+  background-color: rgb(221, 221, 221);
+  color: black;
+  transition: 0.4s;
+}
+[color-scheme=dark] table {
+  width: 80%;
+  margin: auto;
+  background: none;
+}
+[color-scheme=dark] table tr {
+  padding: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+}
+[color-scheme=dark] table td {
+  padding: 0.4rem;
+}
+[color-scheme=dark] table th {
+  padding: 0.4rem;
+}
+[color-scheme=dark] table .tableLink {
+  color: #fff;
+  font-size: 1rem;
+}
+[color-scheme=dark] .modal-content {
+  background-color: rgb(14, 14, 14);
+  border: 0.7px solid rgba(255, 255, 255, 0.144);
+}
+[color-scheme=dark] .modal-content .modal-header {
+  border-bottom: 0.7px solid rgba(255, 255, 255, 0.171);
+}
+[color-scheme=dark] .modal-content .modal-footer {
+  border-top: 0.7px solid rgba(255, 255, 255, 0.171);
+}
+[color-scheme=dark] .modal-content input {
+  background: rgba(26, 26, 26, 0.233);
+  border: 1px solid rgba(255, 255, 255, 0.137254902);
+  color: rgba(206, 206, 206, 0.8078431373);
+}
+
+/*# sourceMappingURL=main.css.map */
