@@ -25,7 +25,7 @@ const props = defineProps({
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <RouterLink class="links" to="/">Dashboarddddddd</RouterLink>
+            <RouterLink class="links" to="/">Dashboard</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="links" to="/despesas">Despesas</RouterLink>

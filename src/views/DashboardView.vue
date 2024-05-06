@@ -19,7 +19,9 @@ const chartOptions = {
 }
 
 const initGraphs = () => {
-  productsArrPriceOrder.value = [...productsArr.value].sort((a, b) => a.preco - b.preco)
+  productsArrPriceOrder.value = productsArr.value
+    .filter((product) => product.tipo === 'saída')
+    .sort((a, b) => a.preco - b.preco)
 
   const labelsPrice = productsArrPriceOrder.value.map((product) => product.nome)
 
@@ -28,7 +30,7 @@ const initGraphs = () => {
     datasets: [
       {
         label: 'Preço (menor - maior)',
-        backgroundColor: 'rgba(0, 233, 0, 0.31)',
+        backgroundColor: 'rgba(255, 0, 0, 0.336)',
         data: productsArrPriceOrder.value.map((product) => product.preco)
       }
     ]
@@ -82,6 +84,8 @@ const initGraphs = () => {
     labels: sortedMonths,
     datasets: datasets
   }
+
+  console.log(chartDataMonths.value)
 }
 
 onMounted(async () => {
@@ -93,12 +97,14 @@ onMounted(async () => {
 
 <template>
   <div class="dashboard-container">
-    <div class="graphs-container">
-      <div v-if="productsArrPriceOrder.length > 0">
-        <div>
-          <h2 class="mb-5">Entradas / Saídas Mensais</h2>
-          <BaseGraph :chartData="chartDataMonths" :chartOptions="chartOptions" />
-        </div>
+    <div class="graphs-container" v-if="productsArrPriceOrder.length > 0">
+      <div class="graph">
+        <h2 class="mb-5">Maiores gastos</h2>
+        <BaseGraph :chartData="chartDataPrice" :chartOptions="chartOptions" />
+      </div>
+      <div class="graph">
+        <h2 class="mb-5">Entradas / Saídas Mensais</h2>
+        <BaseGraph :chartData="chartDataMonths" :chartOptions="chartOptions" />
       </div>
     </div>
   </div>
@@ -107,23 +113,22 @@ onMounted(async () => {
 <style scoped lang="scss">
 .dashboard-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
   width: 100%;
-
+  height: 100%;
+  margin-top: 5rem;
   .graphs-container {
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    gap: 5rem;
     width: 100%;
+    gap: 6rem;
 
-    div {
+    .graph {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      height: 600px;
     }
   }
 }

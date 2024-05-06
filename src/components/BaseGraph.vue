@@ -29,8 +29,8 @@ const props = defineProps({
 })
 </script>
 
-<style>
+<style scoped>
 .base-graph {
-  width: 600px;
+  height: 250px;
 }
 </style>

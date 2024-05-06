@@ -1,57 +1,66 @@
 {
   "products": [
     {
-      "id": "d36d",
-      "nome": "Salário Janeiro ",
-      "preco": 1400,
-      "tipo": "Entrada",
-      "descricao": "Carro",
-      "mes": "Janeiro",
-      "ano": "2024"
-    },
-    {
-      "id": "5033",
-      "nome": "presente da mae",
-      "preco": 400,
+      "nome": "Salário Abril",
+      "preco": 1320,
       "tipo": "Entrada",
       "descricao": "Outros",
-      "mes": "Janeiro",
-      "ano": "2024"
-    },
-    {
-      "id": "a21e",
-      "nome": "Conta de Luz",
-      "preco": 450,
-      "tipo": "saída",
-      "descricao": "Contas",
-      "mes": "Janeiro",
-      "ano": "2024"
-    },
-    {
-      "id": "0e79",
-      "nome": "Conta de Água",
-      "preco": 830,
-      "tipo": "saída",
-      "descricao": "Contas",
-      "mes": "Janeiro",
-      "ano": "2024"
-    },
-    {
-      "nome": "Salário Fevereiro",
-      "preco": 2000,
-      "tipo": "Entrada",
-      "descricao": "Outros",
-      "mes": "Fevereiro",
+      "mes": "Maio",
       "ano": "2024",
-      "id": "ee7b"
+      "id": "d758"
     },
     {
-      "id": "1cef",
-      "nome": "Gasolina Fevereiro",
-      "preco": 400,
+      "nome": "Jantar outback Abril",
+      "preco": 280,
+      "tipo": "saída",
+      "descricao": "Alimentação",
+      "mes": "Maio",
+      "ano": "2024",
+      "id": "842e"
+    },
+    {
+      "id": "8616",
+      "nome": "Fone amazon",
+      "preco": 106,
+      "tipo": "saída",
+      "descricao": "Outros",
+      "mes": "Maio",
+      "ano": "2024"
+    },
+    {
+      "nome": "Uber Abril",
+      "preco": 420,
       "tipo": "saída",
       "descricao": "Carro",
-      "mes": "Fevereiro",
+      "mes": "Abril",
+      "ano": "2024",
+      "id": "3559"
+    },
+    {
+      "nome": "Dinheiro mae",
+      "preco": 500,
+      "tipo": "Entrada",
+      "descricao": "Outros",
+      "mes": "Abril",
+      "ano": "2024",
+      "id": "b46c"
+    },
+    {
+      "id": "86f6",
+      "nome": "Uber Maio",
+      "preco": 150,
+      "tipo": "saída",
+      "descricao": "Carro",
+      "mes": "Maio",
+      "ano": "2024"
+    },
+    {
+      "id": "fffc",
+      "nome": "Dinheiro mae maio",
+      "preco": 500,
+      "tipo": "Entrada",
+      "descricao": "Outros",
+      "mes": "Maio",
       "ano": "2024"
     }
   ]
